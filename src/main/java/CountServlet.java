@@ -12,7 +12,13 @@ public class CountServlet extends HttpServlet {
         counter++;
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
+
+        String inputName = req.getParameter("resetCounter");
+        if(inputName != null) {
+            counter =0;
+        }
         out.println("<h1>You have visited this page "+ counter+" times.</h1>");
+
 
     }
 }
