@@ -10,6 +10,6 @@
     </style>
 </head>
 <body>
-<h1>view color screen</h1>
+<h1>Your color: <%= request.getParameter("color") %></h1>
 </body>
 </html>
