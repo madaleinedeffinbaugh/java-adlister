@@ -5,8 +5,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "CountServlet", urlPatterns = "/count")
-public class CountServlet extends HttpServlet {
+@WebServlet(name = "CounterServlet", urlPatterns = "/count")
+public class CounterServlet extends HttpServlet {
     private static int counter = 0;
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
         counter++;
