@@ -1,6 +1,6 @@
 package com.codeup.adlister.dao;
 
-import Configs.Config;
+import com.codeup.adlister.Configs.Config;
 import com.codeup.adlister.models.User;
 
 public class DaoFactory {
